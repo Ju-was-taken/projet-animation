@@ -1,0 +1,7 @@
+// Dans sass/main.scss
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+@use 'base/base';
+@use 'components/buttons';
+@use 'layout/header';
+@use 'layout/footer';
