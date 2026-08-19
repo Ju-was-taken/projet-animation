@@ -1,0 +1,23 @@
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background-color:  $color-a;
+    padding: 15.5px 0;
+    position: relative;
+
+
+
+    &__icon {
+        margin-right: 17px;
+        color: #353535;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-style: 16px;
+        color: #353535;
+    }
+
+}

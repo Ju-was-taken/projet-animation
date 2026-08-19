@@ -1,0 +1,40 @@
+.explore {
+    background-color: $color-a;
+    text-align: center;
+    padding: 40px 20px 50px 20px;
+
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        margin: 0 0 10px 0; // j'arrive pas à trouver la margin
+        color: #000000;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 300;
+        color: #353535;
+        margin: 0 0 30px 0;
+    }
+
+    &__btn {
+        display: inline-block;
+        text-decoration: none;
+        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 15px 20px;
+        border-radius: 25px;
+        box-shadow: 0px 4px 10px 0px #00000040;
+        transition: transform 200ms, box-shadow 200ms, opacity 200ms;
+
+        &:hover {
+            opacity: 0.9;
+            box-shadow: 0px 4px 10px 0px #00000040;
+        }
+;
+    }
+}
+

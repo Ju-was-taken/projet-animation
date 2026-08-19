@@ -1,0 +1,41 @@
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // ensuite l'animation qui fait apparaitre le loader 
+    animation: hideLoader 3s forwards;
+}
+
+
+.loader-spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid grey;
+    border-top-color: rebeccapurple;
+    border-radius: 50%;
+    // anim qui fait toutrner le spinner
+    animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+    0%{ transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+@keyframes hideLoader {
+    0% {opacity: 1;}
+    80% {opacity: 1;} // presque invisible jusqua lz fin 
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

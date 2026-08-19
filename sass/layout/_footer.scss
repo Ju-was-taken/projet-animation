@@ -1,0 +1,70 @@
+.footer {
+    background-color: #353535;
+    padding: 25px 25px;
+
+
+    &__logo {
+        font-family: 'Shrikhand', cursive; // Au cas où texte
+        color: $color-b;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0 0 20px 0;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 7px; // Espace vertical entre chaque lien
+    }
+
+    &__link {
+        color: $color-b;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+
+       
+    }
+
+    &__icon {
+        width: 20px; // Fixe la largeur pour que tous les textes soient bien alignés
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+
+
+
+
+@media (min-width: 768px) {
+
+    padding: 30px 60px;
+
+    &__container {
+        display: flex;
+        flex-direction: row-reverse; // logo droite liensq gauche
+        align-items: center;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+
+    &__logo  {
+        margin: 0;
+    }
+    &__list {
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+}
+
+
+}
+
+
+

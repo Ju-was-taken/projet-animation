@@ -1,0 +1,200 @@
+@keyframes menu-appear {
+    0% {
+        opacity: 0; // platy invisible
+        transform: translateY(20px); // placé 20px plus bas que sa vrai place
+    }
+    100% {
+        opacity: 1; // plat visible
+        transform: translateY(0);// monte et se met à sa vrai place
+    }
+}
+
+
+
+
+
+
+
+
+.restaurants {
+    background-color: #F6F6F6;
+    padding: 48px 20px;
+    width: 100%;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+
+
+&__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+
+@media(min-width: 768px) {
+ max-width: 1080px;
+ margin: 0 auto;
+
+
+ &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // 2 colonnes
+    gap: 50px 30px;
+ }
+
+}
+
+}
+
+
+.restaurant-card {
+    background-color: $color-b;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px 0px #0000001A;
+    overflow: hidden; // coupe elem qui depasse
+    opacity: 0; // carte caché qd la page charge
+    animation: menu-appear 0.6s ease-out forwards;
+    width: 100%;
+
+
+    &--1 {
+        animation-delay: 0.2s;
+    }
+
+    &--2 {
+        animation-delay: 0.3s;
+    }
+
+    &--3 {
+        animation-delay: 0.4s;
+    }
+
+    &--4 {
+        animation-delay: 0.5s;
+    }
+
+
+
+    &__link {
+        text-decoration: none;
+        color: black; 
+        display: block;
+    }
+
+
+
+    &__img-container {
+        position: relative; // repere pr placer nv badge
+        height: 231px;
+    }
+
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__badge {
+        position: absolute;
+        top: 16px;
+        right: 9px;
+        background-color: #99E2D0;
+        color: #008766;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 7px 12px;
+        border-radius: 2px;
+
+    }
+
+
+
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+
+&__title {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0 0 5px 0;
+    }
+
+    &__subtitle {
+        font-size: 17px;
+        font-weight: 300;
+        margin: 0;
+    }
+
+   &__heart {
+        position: relative;
+        font-size: 22px;
+        width: 22px;
+        height: 21px;
+    }
+
+    // 1. La case à cocher 
+    &__checkbox {
+        display: none;
+
+        // Quand la case est cochée, on agit sur le label d'à côté
+        &:checked + .restaurant-card__heart-btn {
+            .fa-regular {
+                opacity: 0;
+            }
+            .fa-solid {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
+
+    //  Le label 
+    &__heart-btn {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 22px;
+        cursor: pointer;
+
+        // Contour noir 
+        .fa-regular {
+            position: absolute; // se place par rappoet au absolute de heart-btn
+            top: 0; // la ou l'icone se place à l'intérieur du label 
+            left: 0;
+            color: #000000; 
+            
+        }
+
+        // Cœur rempli
+        .fa-solid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transform: scale(0);
+            
+            
+            //dégradé sur une icône
+            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            
+        }
+    }
+
+
+}
