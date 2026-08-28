@@ -54,6 +54,7 @@
 
 
 .restaurant-card {
+    position: relative;
     background-color: $color-b;
     border-radius: 15px;
     box-shadow: 0px 4px 15px 0px #0000001A;
@@ -138,10 +139,12 @@
     }
 
    &__heart {
-        position: relative;
+        position: absolute;
         font-size: 22px;
         width: 22px;
         height: 21px;
+        bottom: 30px;
+        right: 25px;
     }
 
     // 1. La case à cocher 

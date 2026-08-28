@@ -183,6 +183,7 @@
 }
 
 .restaurant-card {
+  position: relative;
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
@@ -246,10 +247,12 @@
   margin: 0;
 }
 .restaurant-card__heart {
-  position: relative;
+  position: absolute;
   font-size: 22px;
   width: 22px;
   height: 21px;
+  bottom: 30px;
+  right: 25px;
 }
 .restaurant-card__checkbox {
   display: none;

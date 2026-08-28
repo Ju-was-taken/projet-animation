@@ -70,28 +70,32 @@
     <div class="restaurants__cards">
                 
                 <!-- Carte 1 -->
-           <article class="restaurant-card restaurant-card--1">
-            <a href="./restaurant/restaurant-1.html" class="restaurant-card__link">
-                <div class="restaurant-card__img-container">
-                    <img src="./assets\images\logo\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" class="restaurant-card__img">
-                    <span class="restaurant-card__badge">Nouveau</span>
-                </div>
-                <div class="restaurant-card__content">
-                    <div class="restaurant-card__txt">
-                        <h3 class="restaurant-card__title">La palette du goût</h3>
-                        <p class="restaurant-card__subtitle">Ménilmontant</p>
-                    </div>
-                    <div class="restaurant-card__heart">
-                        <input type="checkbox" id="heart1" class="restaurant-card__checkbox"> 
+<article class="restaurant-card restaurant-card--1">
+    <!-- Le lien englobe l'image et le texte, mais s'arrête avant le cœur -->
+    <a href="./restaurant/restaurant-1.html" class="restaurant-card__link">
+        <div class="restaurant-card__img-container">
+            <!-- Correction des antislashs (\) en slashs (/) -->
+            <img src="./assets/images/logo/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" class="restaurant-card__img">
+            <span class="restaurant-card__badge">Nouveau</span>
+        </div>
+        
+        <div class="restaurant-card__content">
+            <div class="restaurant-card__txt">
+                <h3 class="restaurant-card__title">La palette du goût</h3>
+                <p class="restaurant-card__subtitle">Ménilmontant</p>
+            </div>
+        </div>
+    </a> <!-- Fermeture de la balise <a> ici -->
 
-                        <label for="heart1" class="restaurant-card__heart-btn">
-                        <i class="fa-regular fa-heart "></i>
-                        <i class="fa-solid fa-heart "></i>
-                    </label>
-                    </div>
-                </div>
-            </a>
-        </article>
+    <!-- Le conteneur du cœur est maintenant en dehors du <a> -->
+    <div class="restaurant-card__heart">
+        <input type="checkbox" id="heart1" class="restaurant-card__checkbox">
+        <label for="heart1" class="restaurant-card__heart-btn">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+        </label>
+    </div>
+</article>
 
         <article class="restaurant-card restaurant-card--2">
             <a href="./restaurant/restaurant-2.html" class="restaurant-card__link">
