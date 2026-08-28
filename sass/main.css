@@ -503,6 +503,7 @@ body {
 .menu-card__button {
   background-color: #99E2D0;
   width: 0; /* Cachée par défaut */
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -520,7 +521,7 @@ body {
 }
 .menu-card:hover .menu-card__button {
   width: 60px; /* La boîte s'ouvre */
-  height: 60px;
+  height: 80px;
 }
 .menu-card:hover .menu-card__button i {
   transform: rotate(0deg); /* L'icône tourne */
