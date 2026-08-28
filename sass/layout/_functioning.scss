@@ -60,7 +60,20 @@
     margin-left: 15px;
     margin-right: 20px;
     transition: color 200ms ease-in-out;
+
+    &--active {
+        color: #9356DC;
+        margin-right: 20px;
+        margin-left: 15px;
+    }
 }
+
+
+
+
+
+
+
 &__text {
         font-weight: 500;
         font-size: 16px;
