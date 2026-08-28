@@ -172,12 +172,15 @@
         font-size: 22px;
         cursor: pointer;
 
+    }
+
         // Contour noir 
         .fa-regular {
             position: absolute; // se place par rappoet au absolute de heart-btn
             top: 0; // la ou l'icone se place à l'intérieur du label 
             left: 0;
             color: #000000; 
+             transition: opacity 300ms ease-in-out;
             
         }
 
@@ -194,10 +197,10 @@
             background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+              transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
 
             
         }
     }
 
 
-}
