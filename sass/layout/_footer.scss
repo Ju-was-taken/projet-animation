@@ -42,29 +42,28 @@
 
 
 @media (min-width: 768px) {
-
     padding: 30px 60px;
 
     &__container {
         display: flex;
-        flex-direction: row-reverse; // logo droite liensq gauche
+        flex-direction: row-reverse;
         align-items: center;
         justify-content: flex-start;
-        gap: 40px;
+        gap: 60px;
+        padding-top: 40px;
+
+        
+        .footer__logo {
+            margin: 0;
+            padding-left: 130px;
+        }
+
+        .footer__list {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
     }
-
-    &__logo  {
-        margin: 0;
-    }
-    &__list {
-        flex-direction: row;
-        gap: 20px;
-    }
-    
-}
-
-
-}
-
+}}
 
 

@@ -6,6 +6,8 @@
     background-color:  $color-a;
     padding: 15.5px 0;
     position: relative;
+    background: #EAEAEA;
+
 
 
 
@@ -20,4 +22,11 @@
         color: #353535;
     }
 
+
+    @media (min-width: 1024px) {
+        box-shadow: none;
+    }
+
 }
+
+
