@@ -14,22 +14,3 @@
 
 
 
-// @use 'abstracts/variables';
-
-// C'est ton "magasin" de valeurs. Tu y découpes et centralises tes couleurs principales, tes polices ou tes tailles. Si tu veux changer le rose de ton site demain, tu le changes uniquement dans _variables.scss et tout ton site se met à jour.
-
-// @use 'abstracts/mixins';
-
-// C'est ta boîte à outils. Tu y mets des fonctions ou des blocs de code réutilisables (ex: la configuration pour tes boutons au survol, ou tes media queries pour le responsive).
-
-// @use 'base/base';
-
-// C'est tes fondations. Tu y mets le CSS global (reset des marges par défaut des navigateurs, taille de police du body, styles des liens <a>, etc.).
-
-// @use 'components/buttons';
-
-// C'est ton élément indépendant. Tu n'y codes que le design des boutons (couleur, arrondi, ombre).
-
-// @use 'layout/header'; et @use 'layout/footer';
-
-// C'est la structure de tes pages. Un fichier dédié pour l'en-tête (logo, navigation) et un autre pour le bas de page.
