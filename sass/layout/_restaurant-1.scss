@@ -230,32 +230,32 @@ body {
 
 &__button {
         background-color: #99E2D0;
-        width: 0; /* Cachée par défaut */
+        width: 0; // Cachée par défaut
         height: 80px;
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: width 0.5s ease-in-out; /* Animation de la largeur */
+        transition: width 0.5s ease-in-out; // Animation de la largeur 
         overflow: hidden;
         
 
         i {
             color: white;
             font-size: 20px;
-            transform: rotate(-180deg); /* Position de départ de l'icône */
-            transition: transform 0.5s ease-in-out; /* Animation de rotation */
+            transform: rotate(-180deg); // Position de départ de l'icône 
+            transition: transform 0.5s ease-in-out; // Animation de rotation 
         }
     }
 
-    /* L'ANIMATION AU SURVOL */
+    //  L'ANIMATION AU SURVOL
     &:hover {
         .menu-card__button {
-            width: 60px; /* La boîte s'ouvre */
+            width: 60px; // La boîte s'ouvre 
             height: 80px;
 
         }
         .menu-card__button i {
-            transform: rotate(0deg); /* L'icône tourne */
+            transform: rotate(0deg); // L'icône tourne 
         }
     }
 
@@ -264,7 +264,7 @@ body {
 
 }
 
-// Bouton commander avec animation
+// Bouton commander avec animatio
 .menu__btn-container {
     display: flex;
     justify-content: center;
